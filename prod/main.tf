@@ -1,6 +1,6 @@
 provider "aws" {
   region = "ap-south-1"
-  shared_credentials_file = "C:/Users/Administrator/.aws/credentials"
+  shared_credentials_file = "~/.aws/credentials"
   profile = "default"
 }
 module "my_vpc" {
