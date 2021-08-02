@@ -1,5 +1,8 @@
 provider "aws" {
   region = "ap-south-1"
+  #according to OS give the path of aws credentials
+  shared_credentials_file = "~/.aws/credentials"
+  profile = "default"
 }
 module "my_vpc" {
 
