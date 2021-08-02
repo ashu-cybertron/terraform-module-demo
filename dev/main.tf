@@ -1,7 +1,7 @@
 provider "aws" {
   region = "ap-south-1"
-  #according to OS give the path of aws credentials
-  shared_credentials_file = "~/.aws/credentials"
+  #according to OS give the path of aws credentials i copied in accessible folder to ease of access
+  shared_credentials_file = "/var/lib/jenkins/workspace/jenkins-terrraform/cred"
   profile = "default"
 }
 module "my_vpc" {
