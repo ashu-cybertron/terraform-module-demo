@@ -4,6 +4,7 @@ provider "aws" {
   shared_credentials_file = "/var/lib/jenkins/workspace/jenkins-terrraform/cred"
   profile                 = "default"
 }
+#used vpc module and given cidr as hard coded
 module "my_vpc" {
 
   source                = "../modules/vpc"
